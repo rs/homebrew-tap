@@ -13,5 +13,6 @@ Available packages:
 
 Package|Description
 ---|---
-jplot|iTerm2 expvar/JSON monitoring tool
-jaggr|JSON Aggregation CLI
+[jplot](https://github.com/rs/jplot)|iTerm2 expvar/JSON monitoring tool
+[jaggr](https://github.com/rs/jaggr)|JSON Aggregation CLI
+[curl-httpie](https://github.com/rs/curl-httpie)|HTTPie for curl
