@@ -1,9 +1,9 @@
 class CurlHttpie < Formula
-  desc "HTTPie for curl"
+  desc "HTTPie for curl — The power of curl, the ease of use of httpie."
   homepage "https://github.com/rs/curl-httpie"
-  url "https://github.com/rs/curl-httpie/releases/download/v0.0.3/curl-httpie_0.0.3_darwin_amd64.tar.gz"
-  version "0.0.3"
-  sha256 "dcc52840b8a7c70d9f34e26c7eb213bccf463011464a6a923f021be051e0004d"
+  url "https://github.com/rs/curl-httpie/releases/download/v0.0.4/curl-httpie_0.0.4_darwin_amd64.tar.gz"
+  version "0.0.4"
+  sha256 "3d0303e8b91c17594f886e0e5c03f7ca38aaabfd31992ebae68fa4eda55c041c"
   
   conflicts_with "httpie"
 
