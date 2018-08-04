@@ -3,7 +3,7 @@ class CurlHttpie < Formula
   homepage "https://github.com/rs/curl-httpie"
   url "https://github.com/rs/curl-httpie/releases/download/v0.0.8/curl-httpie_0.0.8_darwin_amd64.tar.gz"
   version "0.0.8"
-  sha256 "f0239856e6d515834725c6729a418a36bff5e279d5f673ba98e916786d2038df"
+  sha256 "46850f7ef4a6dbea5cd8ccf295b0c32048462c68d7206e6d0f777dac903e7e0c"
   
   conflicts_with "httpie"
 
