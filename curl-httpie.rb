@@ -1,13 +1,11 @@
 class CurlHttpie < Formula
-  desc "HTTPie for curl — The power of curl, the ease of use of httpie."
-  homepage "https://github.com/rs/curl-httpie"
-  url "https://github.com/rs/curl-httpie/releases/download/v1.0.0/curl-httpie_1.0.0_darwin_amd64.tar.gz"
-  version "1.0.0"
-  sha256 "c4a4bdb8010833dadbd6e83adb0f08b3b5a9325841ef8bdc1320f5716235cb08"
-  
-  conflicts_with "httpie"
+  desc "The power of curl, the ease of use of httpie."
+  homepage "https://github.com/rs/curlie"
+  url "https://github.com/rs/curlie/releases/download/v1.1.0/curl-httpie_1.1.0_darwin_amd64.tar.gz"
+  version "1.1.0"
+  sha256 "1860e2200ddf8673b404553953bbef3812c4cbeb76bed2133fb078b9fc473c5c"
 
   def install
-    bin.install "http"
+    bin.install "curlie"
   end
 end
