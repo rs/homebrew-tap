@@ -15,4 +15,4 @@ Package|Description
 ---|---
 [jplot](https://github.com/rs/jplot)|iTerm2 expvar/JSON monitoring tool
 [jaggr](https://github.com/rs/jaggr)|JSON Aggregation CLI
-[curl-httpie](https://github.com/rs/curl-httpie)|HTTPie for curl
+[curlie](https://github.com/rs/curlie)|The power of curl, the ease of use of httpie
