@@ -1,9 +1,9 @@
 class Dnstrace < Formula
   desc "DNS resolution tracing tool"
   homepage "https://github.com/rs/dnstrace"
-  url "https://github.com/rs/dnstrace/releases/download/v1.0.1/dnstrace_1.0.1_darwin_amd64.tar.gz"
-  version "1.0.1"
-  sha256 "3033bd80c21655fccc15ff92feabe6d4bf7eb7214879a1ab338117f63505fd5f"
+  url "https://github.com/rs/dnstrace/releases/download/v1.1.0/dnstrace_1.1.0_darwin_amd64.tar.gz"
+  version "1.1.0"
+  sha256 "433b8574c0688d2fd51122ea04291c5a526a90307d8272f3eded1a6bf93d7a6d"
 
   def install
     bin.install "dnstrace"
