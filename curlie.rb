@@ -2,16 +2,16 @@
 class Curlie < Formula
   desc "The power of curl, the ease of use of httpie."
   homepage "https://curlie.io"
-  version "1.5.4"
+  version "1.6.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/rs/curlie/releases/download/v1.5.4/curlie_1.5.4_darwin_amd64.tar.gz"
-    sha256 "0affb8c2979aa9b116cd5efe28020724dab060e8931a1bf85449f773fd43e61c"
+    url "https://github.com/rs/curlie/releases/download/v1.6.0/curlie_1.6.0_darwin_amd64.tar.gz"
+    sha256 "543e7929c0d4a83fa04ebcfac948d5d28bf80c8da3a5785d671744623dcc0680"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/rs/curlie/releases/download/v1.5.4/curlie_1.5.4_linux_amd64.tar.gz"
-      sha256 "e2656ff53e0ba6b4ab4f647e7eb1a32d8e100e602e954c05456f48b466eb728d"
+      url "https://github.com/rs/curlie/releases/download/v1.6.0/curlie_1.6.0_linux_amd64.tar.gz"
+      sha256 "335e01a904b0bc6268e29559646028a3bebc4217e588e339433d96a008f284c7"
     end
   end
 
