@@ -3,7 +3,6 @@ class Curlie < Formula
   desc "The power of curl, the ease of use of httpie."
   homepage "https://curlie.io"
   version "1.6.0"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/rs/curlie/releases/download/v1.6.0/curlie_1.6.0_darwin_amd64.tar.gz"
