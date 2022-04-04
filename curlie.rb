@@ -5,20 +5,20 @@
 class Curlie < Formula
   desc "The power of curl, the ease of use of httpie."
   homepage "https://curlie.io"
-  version "1.6.7"
+  version "1.6.8"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/rs/curlie/releases/download/v1.6.7/curlie_1.6.7_darwin_arm64.tar.gz"
-      sha256 "4830981bfd4c109230434028f78d769312bf7ccf8f4cab88169f33e241498732"
+      url "https://github.com/rs/curlie/releases/download/v1.6.8/curlie_1.6.8_darwin_arm64.tar.gz"
+      sha256 "3357d34c83442b2fbed63358beadb02a5ce2574e360c99e969419d3f2e2cb7be"
 
       def install
         bin.install "curlie"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rs/curlie/releases/download/v1.6.7/curlie_1.6.7_darwin_amd64.tar.gz"
-      sha256 "6bd4e5c9e7470d1d57672b2db9c7c0e982bee9ff5ffe94a9f824f6abbc11796b"
+      url "https://github.com/rs/curlie/releases/download/v1.6.8/curlie_1.6.8_darwin_amd64.tar.gz"
+      sha256 "2fab07405fa4813d069479eb02d10a6d58b22b98ad9674ff55494d55e9c932f2"
 
       def install
         bin.install "curlie"
@@ -27,25 +27,25 @@ class Curlie < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/rs/curlie/releases/download/v1.6.7/curlie_1.6.7_linux_armv6.tar.gz"
-      sha256 "3979e97978333ea0fafb34f7d41e21b255a53ce9ed321e4d48a3441ea6d6f820"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/rs/curlie/releases/download/v1.6.8/curlie_1.6.8_linux_arm64.tar.gz"
+      sha256 "1c9487425a6c6a3bc3ea25194f2cfc088172891c23eb26432a14ec9be0241319"
 
       def install
         bin.install "curlie"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rs/curlie/releases/download/v1.6.7/curlie_1.6.7_linux_amd64.tar.gz"
-      sha256 "db6d250c0e2386624b269fa5f906c1fb4fc9608f108956c7d37247b4d4ff1b5d"
+      url "https://github.com/rs/curlie/releases/download/v1.6.8/curlie_1.6.8_linux_amd64.tar.gz"
+      sha256 "c1247e40b780e9e9f1325c2d96185a6df239d5e9069e6bc54f7dd0486ad3b009"
 
       def install
         bin.install "curlie"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rs/curlie/releases/download/v1.6.7/curlie_1.6.7_linux_arm64.tar.gz"
-      sha256 "0163239a0414acfdcb025c7a7ff2d1efc3dd1f8552b20559977135b0ff8a2c66"
+    if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
+      url "https://github.com/rs/curlie/releases/download/v1.6.8/curlie_1.6.8_linux_armv6.tar.gz"
+      sha256 "6bf3f7750f4adfd6f284a8312445690aeaa029c9b842c9f416ce7de0bbfe35cd"
 
       def install
         bin.install "curlie"
