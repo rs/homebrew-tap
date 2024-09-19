@@ -5,20 +5,20 @@
 class Qrinfo < Formula
   desc "QRCode info reader"
   homepage "https://github.com/rs/qrinfo"
-  version "1.0.0"
+  version "1.0.1"
 
   on_macos do
     on_intel do
-      url "https://github.com/rs/qrinfo/releases/download/v1.0.0/qrinfo_1.0.0_darwin_amd64v2.tar.gz"
-      sha256 "dd3dce7f4cbd17db6927ad183b7b2a7aadddb748f13e6c417e2c130eace20c16"
+      url "https://github.com/rs/qrinfo/releases/download/v1.0.1/qrinfo_1.0.1_darwin_amd64v2.tar.gz"
+      sha256 "4a979fddc5ff0b9de0213a04da5cf4d79e89bcc5a0e2f07f679d19c866454dff"
 
       def install
         bin.install "qrinfo"
       end
     end
     on_arm do
-      url "https://github.com/rs/qrinfo/releases/download/v1.0.0/qrinfo_1.0.0_darwin_arm64.tar.gz"
-      sha256 "e0bc0bc9efd9a47f8cc04bf8b5df02eb1987b93a48e5174cffb63e1fd3433899"
+      url "https://github.com/rs/qrinfo/releases/download/v1.0.1/qrinfo_1.0.1_darwin_arm64.tar.gz"
+      sha256 "65964519d27f1312cb28c09ecab9fcee40410af186e2345d13f3feebd160a3d7"
 
       def install
         bin.install "qrinfo"
@@ -29,8 +29,8 @@ class Qrinfo < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/rs/qrinfo/releases/download/v1.0.0/qrinfo_1.0.0_linux_amd64v2.tar.gz"
-        sha256 "3e1ffbcb0d1b6c0c6c4afa4fd724c10d61e59f4d6cf1efbe6fa741f75e50e8ce"
+        url "https://github.com/rs/qrinfo/releases/download/v1.0.1/qrinfo_1.0.1_linux_amd64v2.tar.gz"
+        sha256 "0781613032a312f7914fadbeb796b84319cf987a23d32dbe24dfcb1b4d9ab734"
 
         def install
           bin.install "qrinfo"
@@ -39,8 +39,8 @@ class Qrinfo < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/rs/qrinfo/releases/download/v1.0.0/qrinfo_1.0.0_linux_arm64.tar.gz"
-        sha256 "0ee7658ec66d26255c1246c86b9bea375cad1029ab0ea2edc826337ce761a214"
+        url "https://github.com/rs/qrinfo/releases/download/v1.0.1/qrinfo_1.0.1_linux_arm64.tar.gz"
+        sha256 "450ab038e56fe1014eed0bdbd7ca20fc589515025085c47af3c80cec7bff9494"
 
         def install
           bin.install "qrinfo"
