@@ -17,3 +17,4 @@ Package|Description
 [jaggr](https://github.com/rs/jaggr)|JSON Aggregation CLI
 [curlie](https://github.com/rs/curlie)|The power of curl, the ease of use of httpie
 [dnstrace](https://github.com/rs/dnstrace)|DNS resolution tracing tool
+[qrinfo](https://github.com/rs/qrinfo)|QR code parameters extraction tool
