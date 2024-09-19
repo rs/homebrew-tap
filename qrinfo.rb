@@ -5,20 +5,12 @@
 class Qrinfo < Formula
   desc "QRCode info reader"
   homepage "https://github.com/rs/qrinfo"
-  version "1.0.1"
+  version "1.0.6"
 
   on_macos do
-    on_intel do
-      url "https://github.com/rs/qrinfo/releases/download/v1.0.1/qrinfo_1.0.1_darwin_amd64v2.tar.gz"
-      sha256 "4a979fddc5ff0b9de0213a04da5cf4d79e89bcc5a0e2f07f679d19c866454dff"
-
-      def install
-        bin.install "qrinfo"
-      end
-    end
     on_arm do
-      url "https://github.com/rs/qrinfo/releases/download/v1.0.1/qrinfo_1.0.1_darwin_arm64.tar.gz"
-      sha256 "65964519d27f1312cb28c09ecab9fcee40410af186e2345d13f3feebd160a3d7"
+      url "https://github.com/rs/qrinfo/releases/download/v1.0.6/qrinfo_1.0.6_darwin_arm64.tar.gz"
+      sha256 "545b48b50d79b30c5560e8e999ec2246cde4d17109b617b1632068e1acddb14a"
 
       def install
         bin.install "qrinfo"
@@ -27,20 +19,10 @@ class Qrinfo < Formula
   end
 
   on_linux do
-    on_intel do
-      if Hardware::CPU.is_64_bit?
-        url "https://github.com/rs/qrinfo/releases/download/v1.0.1/qrinfo_1.0.1_linux_amd64v2.tar.gz"
-        sha256 "0781613032a312f7914fadbeb796b84319cf987a23d32dbe24dfcb1b4d9ab734"
-
-        def install
-          bin.install "qrinfo"
-        end
-      end
-    end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/rs/qrinfo/releases/download/v1.0.1/qrinfo_1.0.1_linux_arm64.tar.gz"
-        sha256 "450ab038e56fe1014eed0bdbd7ca20fc589515025085c47af3c80cec7bff9494"
+        url "https://github.com/rs/qrinfo/releases/download/v1.0.6/qrinfo_1.0.6_linux_arm64.tar.gz"
+        sha256 "cd0935616f6270a8895fef6ca2e722953ea1eab5391b068461bed331c667e27c"
 
         def install
           bin.install "qrinfo"
