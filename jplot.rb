@@ -5,25 +5,23 @@
 class Jplot < Formula
   desc "iTerm2 expvar/JSON monitoring tool"
   homepage "https://github.com/rs/jplot"
-  version "1.1.6"
+  version "2.2.2"
   depends_on :macos
 
-  on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/rs/jplot/releases/download/v1.1.6/jplot_1.1.6_darwin_amd64.tar.gz"
-      sha256 "d7e6c4525bb63c0788e84d617067cc0809f778edc2fb9fcb8b48999362dbe8f0"
+  if Hardware::CPU.intel?
+    url "https://github.com/rs/jplot/releases/download/v2.2.2/jplot_2.2.2_darwin_amd64.tar.gz"
+    sha256 "6af9f7f7aa641153b9244a3662e5cef4b75842452ed020945af75dec4454cd9b"
 
-      def install
-        bin.install "jplot"
-      end
+    def install
+      bin.install "jplot"
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/rs/jplot/releases/download/v1.1.6/jplot_1.1.6_darwin_arm64.tar.gz"
-      sha256 "bd6556617830e08ab5c7e908a8ef7b8ea5e84b652afc3214786e6dd29ad1096f"
+  end
+  if Hardware::CPU.arm?
+    url "https://github.com/rs/jplot/releases/download/v2.2.2/jplot_2.2.2_darwin_arm64.tar.gz"
+    sha256 "02367598798415253be8046be0a00482cdfe256016440ae17f01406cf399a59b"
 
-      def install
-        bin.install "jplot"
-      end
+    def install
+      bin.install "jplot"
     end
   end
 end
